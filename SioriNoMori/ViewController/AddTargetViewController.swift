@@ -9,11 +9,12 @@
 import UIKit
 
 class AddTargetViewController: UIViewController {
+    var aaa: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        print(aaa)
         // Do any additional setup after loading the view.
     }
     

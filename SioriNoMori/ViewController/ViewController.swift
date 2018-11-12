@@ -32,7 +32,10 @@ class ViewController: UIViewController {
     }
     
     @objc public func addSegue(){
-        print("success")
+        let storyboard = UIStoryboard(name: "AddTarget", bundle: nil)
+        let next: AddTargetViewController = storyboard.instantiateInitialViewController() as! AddTargetViewController
+        next.aaa = "aaa"
+        present(next, animated: true, completion: nil)
     }
 }
 
