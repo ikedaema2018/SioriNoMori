@@ -16,6 +16,7 @@ class LogoComponent: NSObject {
     let logoLabel = UILabel()
     logoLabel.text = "栞の森"
     logoLabel.textColor = UIColor.white
+    logoLabel.textAlignment = NSTextAlignment.center
     logoLabel.font = UIFont(name: "Arial", size: 20)
     if #available(iOS 11.0, *) {
       logoLabel.frame = CGRect(x: 20, y: 40, width: myView.frame.width / 6, height: myView.frame.height / 20)

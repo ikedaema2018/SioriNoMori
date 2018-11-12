@@ -12,6 +12,8 @@
 		C82DF41821974116001A3087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82DF41721974116001A3087 /* Assets.xcassets */; };
 		C82DF41B21974116001A3087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82DF41921974116001A3087 /* LaunchScreen.storyboard */; };
 		C82DF42521974A0E001A3087 /* LogoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82DF42421974A0E001A3087 /* LogoComponent.swift */; };
+		C82DF42821981BDC001A3087 /* AddTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82DF42721981BDC001A3087 /* AddTargetViewController.swift */; };
+		C82DF42A21992C88001A3087 /* FourButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82DF42921992C88001A3087 /* FourButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C82DF41A21974116001A3087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C82DF41C21974116001A3087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C82DF42421974A0E001A3087 /* LogoComponent.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LogoComponent.swift; sourceTree = "<group>"; };
+		C82DF42721981BDC001A3087 /* AddTargetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTargetViewController.swift; sourceTree = "<group>"; };
+		C82DF42921992C88001A3087 /* FourButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +58,9 @@
 		C82DF40F21974111001A3087 /* SioriNoMori */ = {
 			isa = PBXGroup;
 			children = (
+				C82DF42621981B57001A3087 /* ViewController */,
 				C82DF422219749CC001A3087 /* Model */,
 				C82DF41021974111001A3087 /* AppDelegate.swift */,
-				C82DF41221974111001A3087 /* ViewController.swift */,
 				C82DF41721974116001A3087 /* Assets.xcassets */,
 				C82DF41921974116001A3087 /* LaunchScreen.storyboard */,
 				C82DF41C21974116001A3087 /* Info.plist */,
@@ -76,8 +80,18 @@
 			isa = PBXGroup;
 			children = (
 				C82DF42421974A0E001A3087 /* LogoComponent.swift */,
+				C82DF42921992C88001A3087 /* FourButton.swift */,
 			);
 			path = ModelComponent;
+			sourceTree = "<group>";
+		};
+		C82DF42621981B57001A3087 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C82DF42721981BDC001A3087 /* AddTargetViewController.swift */,
+				C82DF41221974111001A3087 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C82DF41321974111001A3087 /* ViewController.swift in Sources */,
+				C82DF42A21992C88001A3087 /* FourButton.swift in Sources */,
 				C82DF41121974111001A3087 /* AppDelegate.swift in Sources */,
 				C82DF42521974A0E001A3087 /* LogoComponent.swift in Sources */,
+				C82DF42821981BDC001A3087 /* AddTargetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
