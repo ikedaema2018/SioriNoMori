@@ -14,7 +14,9 @@ class AddTargetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(aaa)
+        let returnButton = ReturnButton(frame: (CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height / 10)))
+        returnButton.center = CGPoint(x: self.view.frame.width / 2, y: self.view.frame.height - self.view.frame.height / 10 * 2)
+        self.view.addSubview(returnButton)
         // Do any additional setup after loading the view.
     }
     
@@ -28,5 +30,11 @@ class AddTargetViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @objc func backSegue(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let next: ViewController = storyboard.instantiateInitialViewController() as! ViewController
+        present(next, animated: true, completion: nil)
+    }
 
 }

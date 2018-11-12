@@ -9,10 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var bbb: String?
-    var ggg  = "dwadawdawd"
-    var ttt: [String] = []
-    
     //最初のページ
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +27,7 @@ class ViewController: UIViewController {
         
     }
     
-    @objc public func addSegue(){
+    @objc func addSegue(){
         let storyboard = UIStoryboard(name: "AddTarget", bundle: nil)
         let next: AddTargetViewController = storyboard.instantiateInitialViewController() as! AddTargetViewController
         next.aaa = "aaa"
